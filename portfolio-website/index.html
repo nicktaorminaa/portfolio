@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Taormina Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nicholas Taormina</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Software Developer & Designer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-light">About Me</h2>
+            <div class="row align-items-start">
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <p class="text-light lead mb-4">I am a recent computer science graduate with a strong foundation in web development and a passion for creating modern, responsive websites.</p>
+                        <p class="text-light">Through my academic projects, I have gained hands-on experience with web technologies such as JavaScript, React, PHP, and MySQL and enjoy transforming complex problems into elegant, user-friendly solutions. I am eager to apply my skills in a professional setting and contribute to innovative projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="skills-section bg-dark p-4 rounded shadow-sm">
+                        <h3 class="text-light mb-4">Technical Skills</h3>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-code mr-2"></i>HTML5 & CSS3</li>
+                            <li class="mb-2"><i class="fab fa-js mr-2"></i>JavaScript</li>
+                            <li class="mb-2"><i class="fab fa-react mr-2"></i>React</li>
+                            <li class="mb-2"><i class="fab fa-java mr-2"></i>Java</li>
+                            <li class="mb-2"><i class="fas fa-code mr-2"></i>C++</li>
+                            <li class="mb-2"><i class="fas fa-database mr-2"></i>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 text-dark">My Work</h2>
+            <div class="row">
+                <!-- Portfolio items will go here -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img 
+                            src="H.png" 
+                            class="card-img-top" 
+                            alt="Project 1"
+                        >
+                        <div class="card-body">
+                            <h5 class="card-title text-light">
+                                Health Innovations
+                            </h5>
+                            
+                            <p class="card-text text-light">
+                                Healthy Innovations is a comprehensive fitness and nutrition web application built with React, Node.js and Firebase. 
+                                This senior project delivers personalized workout and meal planning through an intuitive interface.
+                            </p>
+
+                            <div class="key-features text-light">
+                                <h6>
+                                    <strong>Key Features:</strong>
+                                </h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Secure user authentication with email and Google sign-in
+                                    </li>
+                                    <li class="list-group-item">
+                                        Custom workout and meal plan creation
+                                    </li>
+                                    <li class="list-group-item">
+                                        Integrated calorie calculator
+                                    </li>
+                                    <li class="list-group-item">
+                                        AI-powered chatbot assistant
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a 
+                                    href="https://healthy-innovations.web.app" 
+                                    target="_blank" 
+                                    class="btn btn-primary"
+                                >
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img 
+                            src="studentlogo.png" 
+                            class="card-img-top" 
+                            alt="Student Management System"
+                        >
+                        <div class="card-body">
+                            <h5 class="card-title text-light">
+                                Student Management System
+                            </h5>
+                            
+                            <p class="card-text text-light">
+                                A robust C++ console application for managing student records and academic information. 
+                                Features object-oriented design principles and file handling for data persistence.
+                            </p>
+
+                            <div class="key-features text-light">
+                                <h6>
+                                    <strong>Key Features:</strong>
+                                </h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Student enrollment and record management
+                                    </li>
+                                    <li class="list-group-item">
+                                        Course registration and grade tracking
+                                    </li>
+                                    <li class="list-group-item">
+                                        GPA calculation system
+                                    </li>
+                                    <li class="list-group-item">
+                                        File-based data storage and retrieval
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a 
+                                    href="https://github.com/nicktaorminaa/Colllege-student-homework-management-system" 
+                                    target="_blank" 
+                                    class="btn btn-primary"
+                                >
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img 
+                            src="casino.jpg" 
+                            class="card-img-top" 
+                            alt="Casino Game"
+                        >
+                        <div class="card-body">
+                            <h5 class="card-title text-light">
+                                Casino Betting Simulator
+                            </h5>
+                            
+                            <p class="card-text text-light">
+                                An interactive C++ console-based casino game that simulates various 
+                                betting games including blackjack, slots, and roulette. Features 
+                                a virtual currency system and probability-based game mechanics.
+                            </p>
+
+                            <div class="key-features text-light">
+                                <h6>
+                                    <strong>Key Features:</strong>
+                                </h6>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Multiple casino game implementations
+                                    </li>
+                                    <li class="list-group-item">
+                                        Virtual wallet and betting system
+                                    </li>
+                                    <li class="list-group-item">
+                                        Random number generation for authentic gameplay
+                                    </li>
+                                    <li class="list-group-item">
+                                        Player statistics tracking
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a 
+                                    href="https://github.com/nicktaorminaa/casino-game" 
+                                    target="_blank" 
+                                    class="btn btn-primary"
+                                >
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="https://www.linkedin.com/in/nicholas-taormina-b3478117a/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nicktaorminaa" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/NickTaormina0 "   target=" _blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Nicholas Taormina. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 70
+                }, 500);
+            }
+        });
+
+        // Animate elements on scroll
+        $(window).scroll(function() {
+            $('.about-content, .skills-section, .card').each(function() {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+
+                if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                    $(this).addClass('animate__animated animate__fadeInUp');
+                }
+            });
+        });
+
+        // Form submission animation
+        $('form').on('submit', function(e) {
+            e.preventDefault();
+            var submitBtn = $(this).find('button[type="submit"]');
+            submitBtn.html('<i class="fas fa-spinner fa-spin mr-2"></i>Sending...');
+            
+            // Simulate form submission (replace with actual form submission)
+            setTimeout(function() {
+                submitBtn.html('<i class="fas fa-check mr-2"></i>Message Sent!');
+                setTimeout(function() {
+                    submitBtn.html('Send Message');
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
