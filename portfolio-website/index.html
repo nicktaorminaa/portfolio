@@ -1,328 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicholas Taormina Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="Portfolio.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="Portfolio.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nicholas Taormina — Software developer and Handshake AI Fellow building clean, performant full-stack web applications. Portfolio, projects, and résumé." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Nicholas Taormina — Software Developer &amp; AI Fellow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nicholas Taormina</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <!-- NAVIGATION -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#home" class="nav__logo" aria-label="Home">
+                <span class="nav__logo-mark">NT</span>
+            </a>
+
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav__actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle color theme" title="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button id="navToggle" class="icon-btn icon-btn--menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="container hero__inner">
+                <p class="hero__eyebrow reveal">
+                    <span class="dot"></span> Open to new opportunities
+                </p>
+                <h1 class="hero__title reveal">
+                    Hi, I'm <span class="grad">Nicholas Taormina</span>.<br />
+                    I build modern web applications.
+                </h1>
+                <p class="hero__lede reveal">
+                    Software developer and Handshake AI Fellow with a B.S. in Computer Programming
+                    &amp; Information Systems and an M.S. in Computer Science in progress. Full-stack
+                    experience across React, Node.js, PHP, and relational databases — with a growing
+                    focus on AI and prompt engineering.
+                </p>
+                <div class="hero__cta reveal">
+                    <a href="#projects" class="btn btn--primary">View my work
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="resume.pdf" class="btn btn--ghost" download>Download résumé
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    </a>
+                </div>
+                <ul class="hero__meta reveal" aria-label="Quick facts">
+                    <li><strong>B.S.</strong> Computer Programming &amp; Information Systems</li>
+                    <li><strong>M.S.</strong> Computer Science (in progress, NYIT)</li>
+                    <li><strong>Based in</strong> Brentwood, NY</li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            <div class="hero__bg" aria-hidden="true"></div>
+        </section>
 
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Software Developer & Designer</p>
-        </div>
-    </section>
-
-  
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 text-light">About Me</h2>
-            <div class="row align-items-start">
-                <div class="col-lg-8">
-                    <div class="about-content">
-                        <p class="text-light lead mb-4">I am a recent computer science graduate with a strong foundation in web development and a passion for creating modern, responsive websites.</p>
-                        <p class="text-light">Through my academic projects, I have gained hands-on experience with web technologies such as JavaScript, React, PHP, and MySQL and enjoy transforming complex problems into elegant, user-friendly solutions. I am eager to apply my skills in a professional setting and contribute to innovative projects.</p>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container grid-2">
+                <div class="reveal">
+                    <p class="section__eyebrow">About</p>
+                    <h2 class="section__title">A developer who cares about the details.</h2>
+                </div>
+                <div class="reveal">
+                    <p class="lede">
+                        I'm a software developer with a B.S. in Computer Programming &amp;
+                        Information Systems from Farmingdale State College (GPA 3.66) and a
+                        Master's in Computer Science in progress at NYIT.
+                    </p>
+                    <p>
+                        I've shipped a full-stack senior capstone with real users, written
+                        systems-level C++ projects, supported real production IT environments
+                        as an intern, and I'm now working as an AI Fellow at Handshake on
+                        prompt engineering for spatial-classification models. I'm looking for
+                        a team where I can keep learning quickly and ship work I'm proud of.
+                    </p>
+                    <div class="about__stats">
+                        <div><span class="stat">3.66</span><span class="stat-label">Undergrad GPA</span></div>
+                        <div><span class="stat">7+</span><span class="stat-label">Languages</span></div>
+                        <div><span class="stat">2026</span><span class="stat-label">AI Fellow @ Handshake</span></div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="skills-section bg-dark p-4 rounded shadow-sm">
-                        <h3 class="text-light mb-4">Technical Skills</h3>
-                        <ul class="text-light list-unstyled">
-                            <li class="mb-2"><i class="fas fa-code mr-2"></i>HTML5 & CSS3</li>
-                            <li class="mb-2"><i class="fab fa-js mr-2"></i>JavaScript</li>
-                            <li class="mb-2"><i class="fab fa-react mr-2"></i>React</li>
-                            <li class="mb-2"><i class="fab fa-java mr-2"></i>Java</li>
-                            <li class="mb-2"><i class="fas fa-code mr-2"></i>C++</li>
-                            <li class="mb-2"><i class="fas fa-database mr-2"></i>MySQL</li>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section section--alt">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="section__eyebrow">Toolkit</p>
+                    <h2 class="section__title">Skills &amp; technologies</h2>
+                    <p class="section__sub">The stack I reach for, organized by where it lives.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="chips">
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SQL</li>
                         </ul>
-                    </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="chips">
+                            <li>React</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive design</li>
+                            <li>Accessibility (a11y)</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg>
+                            <h3>Backend &amp; Data</h3>
+                        </div>
+                        <ul class="chips">
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                            <li>Firestore</li>
+                            <li>Realtime Database</li>
+                            <li>Authentication</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+                            <h3>Tools, Platforms &amp; AI</h3>
+                        </div>
+                        <ul class="chips">
+                            <li>Git &amp; GitHub</li>
+                            <li>VS Code</li>
+                            <li>Firebase Hosting</li>
+                            <li>Prompt engineering</li>
+                            <li>LLM workflows</li>
+                            <li>Agile collaboration</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="portfolio" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4 text-dark">My Work</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img 
-                            src="H.png" 
-                            class="card-img-top" 
-                            alt="Project 1"
-                        >
-                        <div class="card-body">
-                            <h5 class="card-title text-light">
-                                Health Innovations
-                            </h5>
-                            
-                            <p class="card-text text-light">
-                                Healthy Innovations is a comprehensive fitness and nutrition web application built with React, Node.js and Firebase. 
-                                This senior project delivers personalized workout and meal planning through an intuitive interface.
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="section__eyebrow">Journey</p>
+                    <h2 class="section__title">Experience &amp; education</h2>
+                    <p class="section__sub">A short timeline of the work that got me here.</p>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__meta">
+                            <span class="timeline__date">Jan 2026 — Present</span>
+                            <span class="timeline__tag">Work</span>
+                        </div>
+                        <div class="timeline__body">
+                            <h3>AI Fellow</h3>
+                            <p class="timeline__where">Handshake</p>
+                            <p>
+                                Developing and optimizing prompt-engineering strategies to train AI models
+                                for accurate public-space classification and spatial-description generation.
+                                Designing systematic prompt-training protocols and running iterative testing
+                                to improve model output quality, reliability, and accuracy in NLP applications.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__meta">
+                            <span class="timeline__date">2026 — Expected 2028</span>
+                            <span class="timeline__tag">Education</span>
+                        </div>
+                        <div class="timeline__body">
+                            <h3>M.S. Computer Science</h3>
+                            <p class="timeline__where">New York Institute of Technology — Old Westbury, NY</p>
+                            <p>
+                                Currently pursuing a Master's degree in Computer Science to deepen my
+                                foundations in software engineering, AI/ML systems, and computer science theory.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__meta">
+                            <span class="timeline__date">Jun 2023 — Aug 2025</span>
+                            <span class="timeline__tag">Internship</span>
+                        </div>
+                        <div class="timeline__body">
+                            <h3>IT Intern</h3>
+                            <p class="timeline__where">JP Express Services Inc.</p>
+                            <p>
+                                Maintained and troubleshot hardware, software, and network infrastructure
+                                across office and warehouse environments. Configured workstations, managed
+                                user accounts, deployed software updates via internal ticketing, and
+                                documented technical procedures — reducing downtime for logistics operations.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__meta">
+                            <span class="timeline__date">Spring 2024</span>
+                            <span class="timeline__tag">Education</span>
+                        </div>
+                        <div class="timeline__body">
+                            <h3>B.S. Computer Programming &amp; Information Systems</h3>
+                            <p class="timeline__where">Farmingdale State College — Farmingdale, NY · GPA 3.66</p>
+                            <p>
+                                Coursework across algorithms &amp; data structures, software engineering,
+                                database systems, and object-oriented design — paired with hands-on projects
+                                in Java, C++, JavaScript, PHP, and SQL, plus a full-stack senior capstone.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__meta">
+                            <span class="timeline__date">Sep 2021 — Present</span>
+                            <span class="timeline__tag">Work</span>
+                        </div>
+                        <div class="timeline__body">
+                            <h3>Dock Worker / Delivery Helper</h3>
+                            <p class="timeline__where">JP Express Services Inc.</p>
+                            <p>
+                                Coordinate with drivers and warehouse staff to optimize loading efficiency
+                                and reduce dispatch delays. Resolve delivery discrepancies and customer
+                                concerns in a fast-paced, deadline-driven environment — strong reps in time
+                                management, problem-solving, and customer communication.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section section--alt">
+            <div class="container">
+                <div class="section__head reveal">
+                    <p class="section__eyebrow">Selected work</p>
+                    <h2 class="section__title">Projects</h2>
+                    <p class="section__sub">A few of the projects I've shipped — case studies, not screenshots.</p>
+                </div>
+
+                <div class="projects">
+                    <!-- PROJECT 1 -->
+                    <article class="project reveal">
+                        <div class="project__media">
+                            <img src="H.png" alt="Healthy Innovations app interface" loading="lazy" />
+                        </div>
+                        <div class="project__body">
+                            <div class="project__head">
+                                <h3>Healthy Innovations</h3>
+                                <span class="badge">Featured</span>
+                            </div>
+                            <p class="project__role">Full-stack · Senior capstone</p>
+                            <p>
+                                A comprehensive fitness and nutrition web app delivering personalized
+                                workout and meal planning through an intuitive interface — built end-to-end
+                                in React, Node.js, and Firebase.
                             </p>
 
-                            <div class="key-features text-light">
-                                <h6>
-                                    <strong>Key Features:</strong>
-                                </h6>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        Secure user authentication with email and Google sign-in
-                                    </li>
-                                    <li class="list-group-item">
-                                        Custom workout and meal plan creation
-                                    </li>
-                                    <li class="list-group-item">
-                                        Integrated calorie calculator
-                                    </li>
-                                    <li class="list-group-item">
-                                        AI-powered chatbot assistant
-                                    </li>
-                                </ul>
+                            <div class="project__detail">
+                                <div>
+                                    <h4>Problem</h4>
+                                    <p>People starting a fitness journey are overwhelmed by generic plans that don't adapt to their goals or schedules.</p>
+                                </div>
+                                <div>
+                                    <h4>Approach</h4>
+                                    <p>Built a guided onboarding flow that captures goals, then generates tailored workouts and meals — with an AI assistant for follow-up questions.</p>
+                                </div>
+                                <div>
+                                    <h4>Outcome</h4>
+                                    <p>Shipped a live, authenticated product with email + Google sign-in, custom plan builder, calorie calculator, and AI chatbot.</p>
+                                </div>
                             </div>
 
-                            <div class="text-center mt-3">
-                                <a 
-                                    href="https://healthy-innovations.web.app" 
-                                    target="_blank" 
-                                    class="btn btn-primary"
-                                >
-                                    <i class="fas fa-external-link-alt mr-2"></i>
-                                    View Project
+                            <ul class="chips chips--sm">
+                                <li>React</li><li>Node.js</li><li>Firebase</li><li>Firestore</li><li>OAuth</li>
+                            </ul>
+                            <div class="project__links">
+                                <a class="link" href="https://healthy-innovations.web.app" target="_blank" rel="noopener">Live site
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img 
-                            src="studentlogo.png" 
-                            class="card-img-top" 
-                            alt="Student Management System"
-                        >
-                        <div class="card-body">
-                            <h5 class="card-title text-light">
-                                Student Management System
-                            </h5>
-                            
-                            <p class="card-text text-light">
-                                A robust C++ console application for managing student records and academic information. 
-                                Features object-oriented design principles and file handling for data persistence.
+                    <!-- PROJECT 2 -->
+                    <article class="project reveal">
+                        <div class="project__media">
+                            <img src="studentlogo.png" alt="Student management system logo" loading="lazy" />
+                        </div>
+                        <div class="project__body">
+                            <div class="project__head">
+                                <h3>Student Management System</h3>
+                            </div>
+                            <p class="project__role">Systems · C++</p>
+                            <p>
+                                A console application for managing student records, courses, and grades —
+                                designed around clean object-oriented principles and file-based persistence.
                             </p>
 
-                            <div class="key-features text-light">
-                                <h6>
-                                    <strong>Key Features:</strong>
-                                </h6>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        Student enrollment and record management
-                                    </li>
-                                    <li class="list-group-item">
-                                        Course registration and grade tracking
-                                    </li>
-                                    <li class="list-group-item">
-                                        GPA calculation system
-                                    </li>
-                                    <li class="list-group-item">
-                                        File-based data storage and retrieval
-                                    </li>
-                                </ul>
+                            <div class="project__detail">
+                                <div>
+                                    <h4>Problem</h4>
+                                    <p>Tracking enrollment, courses, and GPA across many students with consistent rules and durable storage.</p>
+                                </div>
+                                <div>
+                                    <h4>Approach</h4>
+                                    <p>Modeled students, courses, and grades as discrete C++ classes, with a file I/O layer to persist state between sessions.</p>
+                                </div>
+                                <div>
+                                    <h4>Outcome</h4>
+                                    <p>A robust CLI with enrollment, registration, GPA calculation, and reliable data storage — strong fundamentals in OOP &amp; file handling.</p>
+                                </div>
                             </div>
 
-                            <div class="text-center mt-3">
-                                <a 
-                                    href="https://github.com/nicktaorminaa/Colllege-student-homework-management-system" 
-                                    target="_blank" 
-                                    class="btn btn-primary"
-                                >
-                                    <i class="fas fa-external-link-alt mr-2"></i>
-                                    View Project
+                            <ul class="chips chips--sm">
+                                <li>C++</li><li>OOP</li><li>File I/O</li><li>CLI</li>
+                            </ul>
+                            <div class="project__links">
+                                <a class="link" href="https://github.com/nicktaorminaa/Colllege-student-homework-management-system" target="_blank" rel="noopener">View code
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-               
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img 
-                            src="casino.jpg" 
-                            class="card-img-top" 
-                            alt="Casino Game"
-                        >
-                        <div class="card-body">
-                            <h5 class="card-title text-light">
-                                Casino Betting Simulator
-                            </h5>
-                            
-                            <p class="card-text text-light">
-                                An interactive C++ console-based casino game that simulates various 
-                                betting games including blackjack, slots, and roulette. Features 
-                                a virtual currency system and probability-based game mechanics.
+                    </article>
+
+                    <!-- PROJECT 3 -->
+                    <article class="project reveal">
+                        <div class="project__media">
+                            <img src="casino.jpg" alt="Casino betting simulator" loading="lazy" />
+                        </div>
+                        <div class="project__body">
+                            <div class="project__head">
+                                <h3>Casino Betting Simulator</h3>
+                            </div>
+                            <p class="project__role">Game logic · C++</p>
+                            <p>
+                                An interactive C++ casino sandbox simulating blackjack, slots, and roulette
+                                with a virtual wallet and probability-based mechanics.
                             </p>
 
-                            <div class="key-features text-light">
-                                <h6>
-                                    <strong>Key Features:</strong>
-                                </h6>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        Multiple casino game implementations
-                                    </li>
-                                    <li class="list-group-item">
-                                        Virtual wallet and betting system
-                                    </li>
-                                    <li class="list-group-item">
-                                        Random number generation for authentic gameplay
-                                    </li>
-                                    <li class="list-group-item">
-                                        Player statistics tracking
-                                    </li>
-                                </ul>
+                            <div class="project__detail">
+                                <div>
+                                    <h4>Problem</h4>
+                                    <p>Building multiple games on top of one shared currency &amp; player-state system without making the code a tangle.</p>
+                                </div>
+                                <div>
+                                    <h4>Approach</h4>
+                                    <p>Separated game rules from the wallet/session layer, with reusable helpers for RNG, betting, and statistics.</p>
+                                </div>
+                                <div>
+                                    <h4>Outcome</h4>
+                                    <p>Three working games sharing a single virtual wallet, with per-player stats and authentic probability behavior.</p>
+                                </div>
                             </div>
 
-                            <div class="text-center mt-3">
-                                <a 
-                                    href="https://github.com/nicktaorminaa/casino-game" 
-                                    target="_blank" 
-                                    class="btn btn-primary"
-                                >
-                                    <i class="fas fa-external-link-alt mr-2"></i>
-                                    View Project
+                            <ul class="chips chips--sm">
+                                <li>C++</li><li>RNG</li><li>State machines</li>
+                            </ul>
+                            <div class="project__links">
+                                <a class="link" href="https://github.com/nicktaorminaa/casino-game" target="_blank" rel="noopener">View code
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
                                 </a>
                             </div>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container contact">
+                <div class="reveal">
+                    <p class="section__eyebrow">Get in touch</p>
+                    <h2 class="section__title">Let's build something good.</h2>
+                    <p class="section__sub">
+                        I'm currently open to full-time and contract roles. The fastest way to reach
+                        me is email — I usually reply within a day.
+                    </p>
+
+                    <a class="btn btn--primary contact__email" href="mailto:nicholas.taormina11@gmail.com">
+                        nicholas.taormina11@gmail.com
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4zM4 4l8 8 8-8"/></svg>
+                    </a>
+                    <a class="link contact__phone" href="tel:+16318271242">(631) 827-1242</a>
+
+                    <ul class="socials" aria-label="Social links">
+                        <li>
+                            <a href="https://www.linkedin.com/in/nicholas-taormina-b3478117a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.74 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.48 3.04 5.48 7v7.46h-4.56v-6.62c0-1.58-.03-3.62-2.21-3.62-2.21 0-2.55 1.72-2.55 3.5V22H7.96V8z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/nicktaorminaa" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39s1.98.13 2.9.39c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/NickTaormina0" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22.5 22h-6.85l-4.4-5.74L5.9 22H3.14l6.98-7.97L1.5 2h7.02l3.98 5.27L18.244 2zm-2.4 18h1.78L7.18 4H5.3l10.544 16z"/></svg>
+                                <span>X</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact__form reveal" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required />
                     </div>
-                </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block">
+                        Send message
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    </button>
+                    <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+                </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="py-4 bg-dark text-white">
-        <div class="container text-center">
-            <div class="social-links mb-3">
-                <a href="https://www.linkedin.com/in/nicholas-taormina-b3478117a/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/nicktaorminaa" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://x.com/NickTaormina0 "   target=" _blank" class="social-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <p>&copy; 2025 Nicholas Taormina. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> Nicholas Taormina.</p>
+            <a href="#home" class="link">Back to top
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            </a>
         </div>
     </footer>
 
-  
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-       
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-        });
-
-      
-        $('a[href^="#"]').on('click', function(e) {
-            e.preventDefault();
-            var target = $(this.hash);
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 70
-                }, 500);
-            }
-        });
-
-      
-        $(window).scroll(function() {
-            $('.about-content, .skills-section, .card').each(function() {
-                var elementTop = $(this).offset().top;
-                var elementBottom = elementTop + $(this).outerHeight();
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
-
-                if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                    $(this).addClass('animate__animated animate__fadeInUp');
-                }
-            });
-        });
-
-       
-        $('form').on('submit', function(e) {
-            e.preventDefault();
-            var submitBtn = $(this).find('button[type="submit"]');
-            submitBtn.html('<i class="fas fa-spinner fa-spin mr-2"></i>Sending...');
-            
-           
-            setTimeout(function() {
-                submitBtn.html('<i class="fas fa-check mr-2"></i>Message Sent!');
-                setTimeout(function() {
-                    submitBtn.html('Send Message');
-                }, 3000);
-            }, 1500);
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
